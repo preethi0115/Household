@@ -1,0 +1,162 @@
+,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #213067;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.container{
+	background-color: #fff;
+	width:80%;
+	overflow:hidden;
+	margin:20px auto;	
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	padding:20px;
+}
+
+h1{
+	color: #0089d1;
+    font-size: 34px;
+    padding: 0 0 10px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#householdForm{
+	width:440px;
+	background-color:#e8e7ea;
+	padding:20px;
+}
+
+form div {
+	padding: 10px 0;
+	clear:both;
+	overflow:hidden;
+}
+
+form label {
+	font-family: 'Roboto', sans-serif; 
+	width:200px;
+	float:left;
+	color:#868383;
+}
+
+form input, form select{
+	color:#868383;
+	font-family: 'Roboto', sans-serif; 
+	width:200px;
+	float:left;
+	padding:5px;	
+	margin:0px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+	border:1px solid #dad8d8;
+}
+
+form select{
+	width:210px;		
+}
+
+form input[type=checkbox]{
+	width:20px;	
+} 
+
+form button {
+	background-color:#64acea;
+	color:#f1f1f1;
+	text-transform:uppercase;
+	border: 0px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	padding: 2% 2.5%;
+	margin: 2%;
+	font-size: 1em;
+	cursor: pointer;
+	float:right;
+}
+
+
+button[disabled]{
+	background-color:grey;
+}
+
+#householdList ol{	
+	border:solid 1px #d8d4d4;	
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	width:100%;
+	margin: 0;
+    padding: 0;
+}
+
+#householdList li{	
+	border-bottom:solid 1px #d8d4d4;
+	clear:both;
+	width:100%;
+	overflow:hidden;	
+	text-align:center;
+	list-style:none;
+}
+
+#householdList li:last-child{	
+	border-bottom:none;
+}
+
+#householdList span{
+	width:24%;
+	float:left;
+	padding:20px 0;
+	border-right:solid 1px #d8d4d4;	
+	text-transform:capitalize;
+}
+
+#householdList span:last-child{
+	border-right:none;	
+}
+
+.link{
+	font-size:0.9em;
+	padding:8px;
+	margin: 0 10px;
+	cursor:pointer;
+}
+
+.link.edit {	
+	color: #27ae60;
+}
+
+.link.edit:hover {
+	text-decoration:underline;
+}
+
+.link.delete {
+	color: #e74c3c;
+}
+
+.link.delete:hover {
+	text-decoration:underline;
+}
+
+#debug{
+	width:80%;
+	background:#fff;
+	margin:0 auto;
+	padding :20px;
+}
+
+#status{
+	color:red;
+	padding-bottom:20px;
+}
