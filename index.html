@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<meta charset="utf-8">
+			<title>Household builder</title>		
+			<link rel="stylesheet" href="css/normalise.css">
+			<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+		<div class="container">
+			<h1>Household builder</h1>
+			<div id="status"></div>
+			<div class="builder">				
+				<form id="householdForm">
+					<div>
+						<label for="age">Age</label>
+						   <input type="text" id='age'  placeholder=''  maxlength=3>						
+					</div>
+					<div>
+						<label for="relationship">Relationship</label>
+							<select name="rel" id='relationship'>
+								<option value="">---</option>
+								<option value="self">Self</option>
+								<option value="spouse">Spouse</option>
+								<option value="child">Child</option>
+								<option value="parent">Parent</option>
+								<option value="grandparent">Grandparent</option>
+								<option value="other">Other</option>
+							</select>
+					</div>
+					<div>
+						<label for="smoker">Smoker?</label>
+							<input type="checkbox" name="smoker" id="smoker" >						
+					</div>
+					<div>
+						<button type="submit" id='storeData' value='Add' >Add</button>
+						<button type="submit" id='updateData' value='Edit' disabled>Update</button>
+					</div>
+				</form>
+				
+				
+				<!-- Populating the details from each individual of household-->
+				<div id="householdList">					
+					
+				</div>
+			</div>
+		</div>
+        <pre id="debug"></pre>        
+		<script src='js/main.js'></script>
+    </body>
+</html>
