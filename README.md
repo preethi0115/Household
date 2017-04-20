@@ -1,3 +1,3 @@
 # Household
 
-UI for building a household up from individual people.
+UI for building a household app from individual people.
